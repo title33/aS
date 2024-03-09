@@ -40,6 +40,10 @@ game.Players.LocalPlayer.PlayerGui.MainUI.Interface.Inventory.ItemsFrame.ChildAd
     onChildAdded(item)
 end)
 
+game.Players.LocalPlayer.Character.Backpack.ChildAdded:Connect(function(item)
+    onChildAdded(item)
+end)
+
 while true do
     wait(1)
 
@@ -57,3 +61,4 @@ while true do
         end
     end
 end
+
